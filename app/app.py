@@ -6,11 +6,11 @@ import os
 app = Flask(__name__)
 
 # Configuration: Replace with your RDS credentials
-DB_HOST = os.getenv("DB_HOST", "your-rds-instance-url")
+DB_HOST = os.getenv("DB_HOST", "school-1.claeuw8qwk1n.us-east-2.rds.amazonaws.com")
 DB_PORT = os.getenv("DB_PORT", "5432")
-DB_NAME = os.getenv("DB_NAME", "your_database_name")
-DB_USER = os.getenv("DB_USER", "your_username")
-DB_PASSWORD = os.getenv("DB_PASSWORD", "your_password")
+DB_NAME = os.getenv("DB_NAME", "school-1")
+DB_USER = os.getenv("DB_USER", "postgres")
+DB_PASSWORD = os.getenv("DB_PASSWORD", "Radical11!")
 
 # Establish a database connection
 def get_db_connection():
